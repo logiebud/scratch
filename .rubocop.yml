@@ -1,0 +1,172 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "config/**/*"
+    - "db/**/*.rb"
+    - "bin/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+
+Layout/LineLength:
+  Max: 300
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  Enabled: false
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: false
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Lint/RedundantSafeNavigation:
+  Enabled: false
+
+Lint/SafeNavigationConsistency:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 200
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 200
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 30
+
+Metrics/ParameterLists:
+  Max: 8
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Rails:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Enabled: true
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+Style/AccessModifierDeclarations:
+  Enabled: false
+
+Style/CaseLikeIf:
+  Enabled: false
+
+Style/CombinableLoops:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: either
+  EnforcedStyle: ruby19
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashAsLastArrayItem:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/SafeNavigationChainLength:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/OpenStructUse:
+  Enabled: false
+
+Style/RedundantConstantBase:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+
+Style/TrailingCommaInArguments:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+Style/MultilineBlockChain:
+  Enabled: false

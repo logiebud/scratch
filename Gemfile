@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
+gem 'activerecord'
+gem 'rake'
 gem 'sinatra'
+gem 'sinatra-activerecord'
 gem 'sinatra-contrib'
 gem 'sqlite3'
-gem 'activerecord'
-gem 'sinatra-activerecord'
-gem 'rake'
 
 group :test do
-  gem 'rubocop'
   gem 'byebug'
-  gem 'rspec'
-  gem 'rack-test'
   gem 'database_cleaner-active_record'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'rubocop'
 end

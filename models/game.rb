@@ -16,6 +16,7 @@ class Game < ActiveRecord::Base
     # Mark partial matches
     guess.chars.each_with_index do |char, i|
       next if result[i] == :correct
+
       if target.include?(char)
         result[i] = :partial
       else

@@ -8,8 +8,8 @@ class WordleApp < Sinatra::Base
 
   configure do
     set :database_file, 'config/database.yml'
-    set :views, './views'  # Explicitly set views directory
-    set :public_folder, './public'  # Explicitly set public folder
+    set :views, './views' # Explicitly set views directory
+    set :public_folder, './public' # Explicitly set public folder
   end
 
   get '/' do
@@ -37,7 +37,7 @@ class WordleApp < Sinatra::Base
 
     # Add guess and check result
     result = game.check_guess(guess)
-    game.guesses = (game.guesses || []) << {text: guess, result: result}
+    game.guesses = (game.guesses || []) << { text: guess, result: result }
     game.save
 
     # Check if game is won or lost
