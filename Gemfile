@@ -8,6 +8,7 @@ gem 'sinatra-activerecord'
 gem 'rake'
 
 group :test do
+  gem 'rubocop'
   gem 'byebug'
   gem 'rspec'
   gem 'rack-test'
